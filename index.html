@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/segunda.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/rodape.css">
+    <link rel="stylesheet" href="css/duvidas.css">
+    <script src="js/opcao.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Início</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="img/Logo-removebg-preview.png" alt="">
+        </div>
+        <div class="menu">
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="">Espaços</a></li>
+                <li><a href="">Aulas</a></li>
+                <li><a href="">Agendamento</a></li>
+                <li><a href="">Sobre</a></li>
+            </ul>
+            <a href=login.html><svg  class="icone" xmlns="://www.w3.org/2000/svg" width="50" height="20" fill="currentColor" class="bi bi-person-workspace" viewBox="0 0 16 16">
+                <path d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+                <path d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.4 5.4 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2z"/>
+            </svg></a>
+        </div>
+    </nav>
+    <section class="primeira">
+        <img src="/img/banner.png">
+    </section>
+    <section class="segunda">
+        <div class="quadras">
+            <h1>Seleção de Quadras</h1>
+        </div>
+    </section>
+    <div class="selection-container">
+        <h2>Uma seleção de quadras perto de você</h2>
+        <div class="selection-menu">
+            <button class="option active">Ambientes</button>
+            <button id="btn-ambientes" class="option" onclick="showCards('aulas')">Aulas</button>
+            <button class="option">Acessórios</button>
+        </div>
+    </div>
+<section class="projects">
+    <h2 class="title-proj-mob">Projects</h2>
+    <div class="card">
+    <img src="img/beach.jpg" alt="Imagem do Card" class="card-image">
+    <div class="card-body">
+        <span class="badge">BEACH TENNIS | VÔLEI DE AREIA</span>
+        <h5 class="card-title">QUADRA DE AREIA</h5>
+        <p class="description">Quadra de areia com rede e suporte para jogar Beach Tennis e Vôlei de Areia</p>
+        <br>
+        <div class="btn-group">
+            <div class="btn-card"><a href="quadra.html">Agende Aqui</a></div>
+        </div>
+    </div>
+</div>
+<div class="card">
+    <img src="img/campo.jpg" alt="Imagem do Card" class="card-image">
+    <div class="card-body">
+        <span class="badge">FUTEBOL | RUGBY</span>
+        <h5 class="card-title">EVALUATION PROJECT</h5>
+        <p class="description">This project was developed for a technical course in systems development to work on changing requirements</p>
+        <div class="btn-group">
+            <div class="btn-card"><a href="">Agende Aqui</a></div>
+        </div>
+    </div>
+</div>
+<div class="card">
+    <img src="img/ginasio.jpg" alt="Imagem do Card" class="card-image">
+    <div class="card-body">
+        <span class="badge">FUTSAL | VÔLEI | BASQUETE</span>
+        <h5 class="card-title">PetFace</h5>
+        <p class="description">This project was developed for a technical course in systems development to work on changing requirements</p>
+        <div class="btn-group">
+            <div class="btn-card"><a href="">Agende Aqui</a></div>
+        </div>
+    </div>
+</div>
+<div class="card">
+    <img src="img/society.jpg" alt="Imagem do Card" class="card-image">
+    <div class="card-body">
+        <span class="badge">FUTEBOL</span>
+        <h5 class="card-title">BURGER</h5>
+        <p class="description">This project was developed for a technical course in systems development to work on changing requirements</p>
+        <div class="btn-group">
+            <div class="btn-card"><a href="">Agende Aqui</a></div>
+        </div>
+    </div>
+</div>
+<div class="card">
+    <img src="img/quadrafechada.jpg" alt="Imagem do Card" class="card-image">
+    <div class="card-body">
+        <span class="badge">FUTSAL | VÔLEI | BASQUETE</span>
+        <h5 class="card-title">EVALUATION PROJECT</h5>
+        <p class="description">This project was developed for a technical course in systems development to work on changing requirements</p>
+        <div class="btn-group">
+            <div class="btn-card"><a href="">Agende Aqui</a></div>
+        </div>
+    </div>
+</div>
+<div class="card">
+    <img src="img/quadraaberta.jpg" alt="Imagem do Card" class="card-image">
+    <div class="card-body">
+        <span class="badge">FUTSAL | VÔLEI | BASQUETE</span>
+        <h5 class="card-title">PetFace</h5>
+        <p class="description">This project was developed for a technical course in systems development to work on changing requirements</p>
+        <div class="btn-group">
+            <div class="btn-card"><a href="">Agende Aqui</a></div>
+        </div>
+    </div>
+</div>
+</section>
+<section class="container">
+    <div class="faq-section">
+        <div class="faq-list">
+            <h2>DÚVIDAS FREQUENTES</h2>
+            <p>Veja aqui as respostas para as dúvidas mais frequentes sobre nossos produtos.</p>
+
+            <div class="faq-item">
+                <span>Posso comprar diretamente com a RAZI?</span>
+                <i class="arrow">&#x25BC;</i>
+            </div>
+            <div class="faq-item">
+                <span>Onde encontro os produtos RAZI?</span>
+                <i class="arrow">&#x25BC;</i>
+            </div>
+            <div class="faq-item">
+                <span>Como acionar Assistência técnica RAZI?</span>
+                <i class="arrow">&#x25BC;</i>
+            </div>
+            <div class="faq-item">
+                <span>Onde encontro peças de reposição dos equipamentos RAZI?</span>
+                <i class="arrow">&#x25BC;</i>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h3>Não solucionou sua dúvida?</h3>
+            <form>
+                <input type="text" name="name" placeholder="Nome*" required>
+                <input type="email" name="email" placeholder="E-mail*" required>
+                <select name="assunto" required>
+                    <option value="" disabled selected>Assunto</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="suporte">Suporte Técnico</option>
+                </select>
+                <textarea name="mensagem" rows="5" placeholder="Mensagem*" required></textarea>
+                <label>
+                    <input type="checkbox" name="newsletter">
+                    Aceito me cadastrar na Court
+                </label>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container-footer">
+        <div class="row-footer">
+            <!-- footer col-->
+            <div class="footer-col">
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="#"> Quem somos </a></li>
+                    <li><a href=""> nossos serviços </a></li>
+                    <li><a href=""> política de privacidade </a></li>
+                    <li><a href=""> programa de afiliados</a></li>
+                </ul>
+            </div>
+            <!--end footer col-->
+            <!-- footer col-->
+            <div class="footer-col">
+                <h4>Obter ajuda</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Transporte</a></li>
+                    <li><a href="#">devoluções</a></li>
+                    <li><a href="#">Status De Pedido</a></li>
+                    <li><a href="#">Opções De Pagamento</a></li>
+                </ul>
+            </div>
+            <!--end footer col-->
+            <!-- footer col-->
+            <div class="footer-col">
+                <h4>Loja online</h4>
+                <ul>
+                    <li><a href="#">Relógio</a></li>
+                    <li><a href="#">Saco</a></li>
+                    <li><a href="#">Calçado</a></li>
+                    <li><a href="#">Endereço</a></li>
+                </ul>
+            </div>
+            <!--end footer col-->
+            <!-- footer col-->
+            <div class="footer-col">
+                <h4>Se subescreva!</h4>
+                <div class="form-sub">
+                    <form>
+                        <input type="email" placeholder="Digite o seu e-mail" required>
+                        <button>Inscrever-se</button>
+                    </form>
+                </div>
+
+                <div class="medias-socias">
+                    <a href="#"> <i class="fa fa-facebook"></i> </a>
+                    <a href="#"> <i class="fa fa-instagram"></i> </a>
+                    <a href="#"> <i class="fa fa-twitter"></i> </a>
+                    <a href="#"> <i class="fa fa-linkedin"></i> </a>
+                </div>
+
+            </div>
+            <!--end footer col-->
+        </div>
+    </div>
+</footer>
+</body>
+</html>
